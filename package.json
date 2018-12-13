@@ -1,0 +1,19 @@
+{
+  "name": "yourls-slack",
+  "version": "1.0.0",
+  "description": "A YOURLS Slack bot for people who simply despise their browsers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tinkertanker/YOURLS-Slack.git"
+  },
+  "author": "James Chen (unknownguy2002)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tinkertanker/YOURLS-Slack/issues"
+  },
+  "homepage": "https://github.com/Tinkertanker/YOURLS-Slack#readme"
+}
