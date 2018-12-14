@@ -12,7 +12,7 @@ A YOURLS Slack bot for people who simply despise their browsers.
 ### Yourls
  - YOURLS Plugin: API Action - Delete (https://github.com/claytondaley/yourls-api-delete)
 
-- Rest of Tinkertanker.
+All at Tinkertanker.
 
 ## License:
 ```
