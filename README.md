@@ -56,3 +56,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+![alt Made by the Tinkertanker team!](https://raw.githubusercontent.com/Tinkertanker/YOURLS-Slack/master/docs/images/tticon.png)
