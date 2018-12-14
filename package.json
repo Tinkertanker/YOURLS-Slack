@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Tinkertanker/YOURLS-Slack/issues"
   },
-  "homepage": "https://github.com/Tinkertanker/YOURLS-Slack#readme"
+  "homepage": "https://github.com/Tinkertanker/YOURLS-Slack#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "localtunnel": "^1.9.1",
+    "node-fetch": "^2.3.0"
+  }
 }
