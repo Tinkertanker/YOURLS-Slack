@@ -2,6 +2,8 @@
 A YOURLS Slack bot for people who simply despise their browsers. Simple script
 
 ## How to install:
+<details><summary>Show</summary>
+<p>
 Documentation is WIP
 
 #### Step 1: Clone the repo & install dependencies using npm install
@@ -18,6 +20,9 @@ Documentation is WIP
 
 
 #### Step 4: Fill in the exampleconfig.json file, rename it to config.json and run node index
+
+</p>
+</details>
 
 ## Credits:
 ### Node.js
