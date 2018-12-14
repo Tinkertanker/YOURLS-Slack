@@ -43,12 +43,12 @@ app.post('/shorten', function(req, res){
         return;
     }
     res.send(JSON.stringify({"response_type": "in_channel","text": "Verified. Attemping to shorten! :link:"}));
-    fetch(`${config.yourl}/yourls-api.php?signature=${config.signature}&action=shorturl&format=json&url=${args[0]}&keyword=${args[1]}`).then(getres => getres.json()).then(json => {
+    fetch(`${config.yourl}/yourls-api.php?signature=${encodeURI(config.signature)}&action=shorturl&format=json&url=${encodeURI(args[0])}&keyword='${encodeURI(args[1].toLowerCase())}'`).then(getres => getres.json()).then(json => {
         if(json.status === "fail"){
             fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `Error: ${json.message}`,}), headers: { 'Content-Type': 'application/json' }})
         }   
         if(json.status === "success"){
-            fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `Success: ${json.message}\nShortcut: ${config.yourl}${json.url.keyword}`,}), headers: { 'Content-Type': 'application/json' }})
+            fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `Success: ${json.message}\nShortcut: ${json.shorurl}`,}), headers: { 'Content-Type': 'application/json' }})
         } 
     })
 });
@@ -73,7 +73,7 @@ app.post('/unshorten', function(req, res){
         return;
     }
     res.send(JSON.stringify({"response_type": "in_channel","text": "Verified. Attemping to unshorten! :boom:"}));
-    fetch(`${config.yourl}/yourls-api.php?signature=${config.signature}&action=delete&shorturl=${args[0]}&format=json`).then(getres => getres.json()).then(json => {
+    fetch(`${config.yourl}/yourls-api.php?signature=${encodeURI(config.signature)}&action=delete&shorturl='${encodeURI(args[0].toLowerCase())}'&format=json`).then(getres => getres.json()).then(json => {
         if(json.statusCode != 200){
             fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `${json.message.charAt(0).toUpperCase() + json.message.slice(1)}`,}), headers: { 'Content-Type': 'application/json' }})
         }   
