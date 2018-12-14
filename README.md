@@ -62,6 +62,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 <div style="text-align:center;">
-## Made by:
+<h2>Made by:</h2>
 <img src="https://raw.githubusercontent.com/Tinkertanker/YOURLS-Slack/master/docs/images/tticon.png" alt="Tinkertanker" width="50%" height="50%">
 </div>
