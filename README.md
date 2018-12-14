@@ -2,19 +2,13 @@
 A YOURLS Slack bot for people who simply despise their browsers.
 
 ### Credits:
-Localtunnel(https://www.npmjs.com/package/localtunnel) because Slack's /commands requires a http endpoint.
-
-Express.js for recieving post requests from slack.
-
-Node-fetch(https://www.npmjs.com/package/node-fetch) for API calls.
-
-Crypto & qs(https://www.npmjs.com/package/qs) for slack verification
-
-This awesome article, https://medium.com/@rajat_sriv/verifying-requests-from-slack-using-node-js-69a8b771b704 from which I copied wholesomely from :)
-
-Supervisor(https://www.npmjs.com/package/supervisor) in case Localtunnel decides to crash.
-
-Rest of Tinkertanker.
+- Localtunnel(https://www.npmjs.com/package/localtunnel) because Slack's /commands requires a http endpoint.
+- Express.js for recieving post requests from slack.
+- Node-fetch(https://www.npmjs.com/package/node-fetch) for API calls.
+- Crypto & qs(https://www.npmjs.com/package/qs) for slack verification
+- This awesome article, https://medium.com/@rajat_sriv/verifying-requests-from-slack-using-node-js-69a8b771b704 from which I copied wholesomely from :)
+- Supervisor(https://www.npmjs.com/package/supervisor) in case Localtunnel decides to crash.
+- Rest of Tinkertanker.
 
 ### License:
 ```
