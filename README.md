@@ -62,4 +62,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ### Made by:
-<img src="https://raw.githubusercontent.com/Tinkertanker/YOURLS-Slack/master/docs/images/ttancienticon.png" alt="Tinkertanker" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/Tinkertanker/YOURLS-Slack/master/docs/images/tticon.png" alt="Tinkertanker" width="50%" height="50%">
