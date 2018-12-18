@@ -48,7 +48,7 @@ app.post('/shorten', function(req, res){
             fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `Error: ${json.message}`,}), headers: { 'Content-Type': 'application/json' }})
         }   
         if(json.status === "success"){
-            fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `Success: ${json.message}\nShortcut: ${json.shorurl}`,}), headers: { 'Content-Type': 'application/json' }})
+            fetch(req.body.response_url, { method: 'POST', body: JSON.stringify({"response_type": "in_channel","text": `Success: ${json.message}\nShortcut: ${json.shorturl}`,}), headers: { 'Content-Type': 'application/json' }})
         } 
     })
 });
