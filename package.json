@@ -19,7 +19,6 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "localtunnel": "^1.9.1",
     "node-fetch": "^2.3.0",
     "qs": "^6.6.0"
   }
