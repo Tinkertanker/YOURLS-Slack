@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-var localtunnel = require('localtunnel');
 var express = require('express');
 var app = express()
 var bodyParser = require('body-parser')
@@ -8,16 +7,6 @@ var qs = require('qs')
 const config = require("./config.json")
 const slackSigningSecret = config.signingsecret
 app.use(bodyParser());
-
-var tunnel = localtunnel(config.port, {"subdomain":config.url}, function(err, tunnel) {
-    if(err) process.exit(0);
-    console.log(tunnel.url)
-});
-
-tunnel.on('close', function() {
-    console.log("Tunnel closed")
-    process.exit(0);
-});
 
 app.get('/shorten', function(req, res){
     console.log("Get Shortening")
@@ -82,5 +71,5 @@ app.post('/unshorten', function(req, res){
         } 
     })
 });
-app.listen(80)
+app.listen(config.port, () => console.log(`Started server on ${config.port}`));
 
