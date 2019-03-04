@@ -107,7 +107,7 @@ app.post("/unshorten", function(req, res) {
   fetch(
     `${config.yourl}/yourls-api.php?signature=${encodeURI(
       config.signature
-    )}&action=delete&shorturl='${encodeURI(args[0].toLowerCase())}'&format=json`
+    )}&action=delete&shorturl=${encodeURI(args[0].toLowerCase())}&format=json`
   )
     .then(getres => getres.json())
     .then(json => {
