@@ -8,10 +8,6 @@ const config = require("./config.json");
 const slackSigningSecret = config.signingsecret;
 app.use(bodyParser());
 
-app.get("/shorten", function(req, res) {
-  console.log("Get Shortening");
-});
-
 app.post("/shorten", function(req, res) {
   //verify
   let slackSignature = req.headers["x-slack-signature"];
